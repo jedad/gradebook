@@ -1,0 +1,20 @@
+dotnet new console
+dotnet run
+code .
+dotnet run --project src\gradebook
+
+##GIT 
+git remote add origin https://<TOKEN>@github.com/<USERNAME>/<REPO>.git
+git remote add origin https://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@github.com/jedad/gradebook.git
+git push https://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@github.com/jedad/gradebook.git  
+git branch dev
+git push --set-upstream  https://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@github.com/jedad/gradebook.git   dev
+
+dotnet build  src/gradebook
+dotnet src\gradebook\bin\Debug\net6.0\gradebook.dll
+# plik .dll wymaga runtime, tutaj .net6
+# plik exe już nie
+src\gradebook\bin\Debug\net6.0\gradebook.exe
+
+# Program.cs :
+# Main - metoda, dla której są keyword'y static i void
